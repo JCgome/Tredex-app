@@ -1,0 +1,21 @@
+// custom-material-theme.scss
+@use "@angular/material" as mat;
+
+// Definir las paletas de colores personalizadas
+$tredex-primary: mat.define-palette(mat.$indigo-palette, 500, 100, 700);
+$tredex-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+$tredex-warn: mat.define-palette(mat.$red-palette);
+
+// Crear el tema personalizado
+$tredex-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $tredex-primary,
+      accent: $tredex-accent,
+      warn: $tredex-warn,
+    ),
+  )
+);
+
+// Incluir estilos para todos los componentes de Angular Material
+@include mat.all-component-themes($tredex-theme);

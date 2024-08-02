@@ -1,0 +1,34 @@
+.container-image {
+  position: absolute;
+  top: 6%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.container-image img {
+  width: 100%;
+  height: 80vh;
+  object-fit: cover;
+  display: block;
+}
+.second-image img {
+  position: absolute;
+  top: 30%;
+  left: 12%;
+  width: 10%;
+  height: auto;
+}
+
+.title {
+  position: absolute;
+  top: 11%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  z-index: 2;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: bold;
+}

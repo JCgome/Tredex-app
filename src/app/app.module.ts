@@ -3,16 +3,36 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { HomeComponent } from './shared/pages/home/home.component';
+import { ControlPanelComponent } from './shared/pages/control-panel/control-panel.component';
+import { NavHomeComponent } from './shared/components/nav-home/nav-home.component';
+import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
+import { MaterialModule } from './shared/material/material.module';
+import { HeaderComponent } from './shared/components/header/header.component';
+import { BodyHomeComponent } from './shared/components/body-home/body-home.component';
+import { SectionHomeComponent } from './shared/components/section-home/section-home.component';
+import { FooterHomeComponent } from './shared/components/footer-home/footer-home.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent,
+    ControlPanelComponent,
+    NavHomeComponent,
+    SidebarComponent,
+    HeaderComponent,
+    BodyHomeComponent,
+    SectionHomeComponent,
+    FooterHomeComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule,
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}
