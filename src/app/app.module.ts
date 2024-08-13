@@ -9,10 +9,12 @@ import { ControlPanelComponent } from './shared/pages/control-panel/control-pane
 import { NavHomeComponent } from './shared/components/nav-home/nav-home.component';
 import { SidebarComponent } from './shared/components/sidebar/sidebar.component';
 import { MaterialModule } from './shared/material/material.module';
-import { HeaderComponent } from './shared/components/header/header.component';
+
 import { BodyHomeComponent } from './shared/components/body-home/body-home.component';
 import { SectionHomeComponent } from './shared/components/section-home/section-home.component';
 import { FooterHomeComponent } from './shared/components/footer-home/footer-home.component';
+import { HeaderComponent } from './shared/components/header-home/header-home.component';
+import { ReforceSectionComponent } from './shared/components/reforce-section/reforce-section.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,7 @@ import { FooterHomeComponent } from './shared/components/footer-home/footer-home
     BodyHomeComponent,
     SectionHomeComponent,
     FooterHomeComponent,
+    ReforceSectionComponent,
   ],
   imports: [
     BrowserModule,

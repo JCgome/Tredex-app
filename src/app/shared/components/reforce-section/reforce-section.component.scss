@@ -1,0 +1,32 @@
+.reforce {
+  top: 10;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background: black;
+  font-family: "raleway";
+  color: white;
+}
+
+.text-reforce {
+  font-size: 1.2rem;
+}
+
+.button-start button {
+  border-radius: 2rem;
+  width: 26rem;
+  height: 4rem;
+  font-size: 1.3rem;
+  background: white;
+  color: black;
+  border: 1px solid black;
+}
+
+.product-reforce {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
