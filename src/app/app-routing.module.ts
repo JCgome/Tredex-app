@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './shared/pages/home/home.component';
+import { HomeComponent } from './home/home.component';
+import { ControlPanelComponent } from './control-panel/control-panel.component';
 
 const routes: Routes = [
   {
@@ -8,8 +9,12 @@ const routes: Routes = [
     component: HomeComponent,
   },
   {
+    path: 'panel',
+    component: ControlPanelComponent,
+  },
+  {
     path: '**',
-    redirectTo: '',
+    redirectTo: 'Home',
   },
 ];
 
