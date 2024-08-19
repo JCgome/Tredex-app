@@ -1,0 +1,56 @@
+<mat-sidenav-container fullscreen>
+  <mat-sidenav
+    #sidenav
+    mode="side"
+    class="sidenav-container"
+    [ngStyle]="{ width: '250px' }"
+  >
+    <mat-nav-list *ngFor="let item of sidebarItems">
+      <mat-list-item (click)="sidenav.toggle()">
+        <mat-icon matListItemIcon>{{ item.icon }}</mat-icon>
+        <a href="">{{ item.label }}</a>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+
+  <mat-toolbar color="basic" class="toolbar-container">
+    <button mat-icon-button (click)="sidenav.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+
+    <div class="logo-nav">
+      <img src="../../../../assets/logo/logo-tredex.png" alt="" />
+    </div>
+
+    <span class="spacer"></span>
+
+    <button mat-icon-button class="notification">
+      <mat-icon>notifications</mat-icon>
+    </button>
+
+    <div class="dropdown-center">
+      <button
+        class="btn btn-secondary dropdown-toggle"
+        type="button"
+        data-bs-toggle="dropdown"
+        aria-expanded="false"
+      >
+        <img src="../../../../assets/img-panel/perfil.png" alt="" />
+        Demo
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Perfil</a></li>
+        <mat-divider></mat-divider>
+        <li><a class="dropdown-item" href="#">Tu tienda</a></li>
+        <mat-divider></mat-divider>
+        <li><a class="dropdown-item" href="#">Tredex</a></li>
+        <li><a class="dropdown-item" href="#">Documentacion</a></li>
+        <li><a class="dropdown-item" href="#">Soporte</a></li>
+      </ul>
+    </div>
+    <button mat-icon-button>
+      <span>Cerrar Sesion</span>
+      <mat-icon>logout</mat-icon>
+    </button>
+  </mat-toolbar>
+</mat-sidenav-container>
