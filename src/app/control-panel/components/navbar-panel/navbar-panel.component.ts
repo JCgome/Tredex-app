@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { sidebarItems } from 'src/app/core/data/sidebar-items.data';
 
 @Component({
   selector: 'app-navbar-panel',
@@ -6,13 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar-panel.component.scss'],
 })
 export class NavbarPanelComponent implements OnInit {
-  public sidebarItems = [
-    { label: 'Inicio', icon: 'home' },
-    { label: 'Catalogo', icon: 'sell' },
-    { label: 'Ventas', icon: 'attach_money' },
-    { label: 'Clientes', icon: 'group' },
-    { label: 'Opciones', icon: 'settings' },
-  ];
+  public sidebarItems = sidebarItems;
 
   constructor() {}
 

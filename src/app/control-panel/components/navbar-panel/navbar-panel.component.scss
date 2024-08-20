@@ -8,12 +8,11 @@ mat-sidenav-container[fullscreen] {
   background-color: #bebfc5;
   color: black;
   border-radius: 5px;
-
   text-align: center;
 }
 
 .spacer {
-  flex-grow: 1;
+  flex: 1;
 }
 
 img {
@@ -24,12 +23,11 @@ img {
   margin-top: 0.5rem;
 }
 
-.toolbar-container {
+.dropdown-center {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  padding: 0 7rem;
   gap: 2rem;
+  margin-right: 10rem;
 }
 
 mat-toolbar {

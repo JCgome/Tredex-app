@@ -24,11 +24,11 @@
 
     <span class="spacer"></span>
 
-    <button mat-icon-button class="notification">
-      <mat-icon>notifications</mat-icon>
-    </button>
-
     <div class="dropdown-center">
+      <button mat-icon-button class="notification">
+        <mat-icon>notifications</mat-icon>
+      </button>
+
       <button
         class="btn btn-secondary dropdown-toggle"
         type="button"
@@ -40,17 +40,16 @@
       </button>
       <ul class="dropdown-menu">
         <li><a class="dropdown-item" href="#">Perfil</a></li>
-        <mat-divider></mat-divider>
         <li><a class="dropdown-item" href="#">Tu tienda</a></li>
-        <mat-divider></mat-divider>
         <li><a class="dropdown-item" href="#">Tredex</a></li>
         <li><a class="dropdown-item" href="#">Documentacion</a></li>
         <li><a class="dropdown-item" href="#">Soporte</a></li>
       </ul>
+
+      <button mat-icon-button>
+        <span>Cerrar Sesion</span>
+        <mat-icon>logout</mat-icon>
+      </button>
     </div>
-    <button mat-icon-button>
-      <span>Cerrar Sesion</span>
-      <mat-icon>logout</mat-icon>
-    </button>
   </mat-toolbar>
 </mat-sidenav-container>
