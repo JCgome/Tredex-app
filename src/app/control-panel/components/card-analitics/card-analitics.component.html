@@ -1,0 +1,51 @@
+<div class="content-container-body">
+  <div class="row justify-content-center mt-3">
+    <div class="col-md-6 mb-2">
+      <div class="card text-center">
+        <div class="card-header">
+          <p>Paises con mas ventas</p>
+        </div>
+        <div class="card-body">
+          <ngx-charts-pie-chart
+            [view]="view"
+            [results]="single"
+            [gradient]="gradient"
+            [legend]="showLegend"
+            [labels]="showLabels"
+            [doughnut]="isDoughnut"
+            (select)="onSelect($event)"
+            (activate)="onActivate($event)"
+            (deactivate)="onDeactivate($event)"
+          >
+          </ngx-charts-pie-chart>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 mb-2">
+      <div class="card text-center">
+        <div class="card-header">
+          <p>Historial de pedidos</p>
+        </div>
+        <div class="card-body">
+          <ngx-charts-line-chart
+            [view]="view"
+            [legend]="legend"
+            [showXAxisLabel]="showXAxisLabel"
+            [showYAxisLabel]="showYAxisLabel"
+            [xAxis]="xAxis"
+            [yAxis]="yAxis"
+            [xAxisLabel]="xAxisLabel"
+            [yAxisLabel]="yAxisLabel"
+            [timeline]="timeline"
+            [results]="historieSales"
+            (select)="onSelect($event)"
+            (activate)="onActivate($event)"
+            (deactivate)="onDeactivate($event)"
+          >
+          </ngx-charts-line-chart>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
