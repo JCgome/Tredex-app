@@ -7,7 +7,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { ControlPanelComponent } from './control-panel/control-panel.component';
 import { NavHomeComponent } from './home/components/nav-home/nav-home.component';
-import { SidebarComponent } from './control-panel/components/sidebar/sidebar.component';
 import { MaterialModule } from './material/material.module';
 
 import { BodyHomeComponent } from './home/components/body-home/body-home.component';
@@ -25,7 +24,6 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
     HomeComponent,
     ControlPanelComponent,
     NavHomeComponent,
-    SidebarComponent,
     HeaderComponent,
     BodyHomeComponent,
     SectionHomeComponent,

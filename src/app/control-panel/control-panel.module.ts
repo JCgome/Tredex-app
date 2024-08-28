@@ -8,12 +8,16 @@ import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
+import { LastContentComponent } from './components/last-content/last-content.component';
+import { TablesComponent } from './components/tables/tables.component';
 
 @NgModule({
   declarations: [
     NavbarPanelComponent,
     CardsInformationComponent,
     CardAnaliticsComponent,
+    LastContentComponent,
+    TablesComponent,
   ],
   imports: [
     CommonModule,
@@ -23,6 +27,6 @@ import { FormsModule } from '@angular/forms';
     FormsModule,
     BrowserAnimationsModule,
   ],
-  exports: [NavbarPanelComponent, CardsInformationComponent],
+  exports: [NavbarPanelComponent, CardsInformationComponent, TablesComponent],
 })
 export class ControlPanelModule {}
