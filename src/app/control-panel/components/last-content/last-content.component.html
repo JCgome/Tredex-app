@@ -1,0 +1,27 @@
+<div class="content-container-body">
+  <div class="row justify-content-center mt-3">
+    <div class="col-md-6 mb-2">
+      <div class="card text-center">
+        <div class="card-header">
+          <p>Actividades Recientes</p>
+        </div>
+        <app-tables
+          [columns]="tableColumns"
+          [dataSource]="dataSource"
+        ></app-tables>
+      </div>
+    </div>
+
+    <div class="col-md-6 mb-2">
+      <div class="card text-center">
+        <div class="card-header">
+          <p>Ultimos Pedidos</p>
+        </div>
+        <app-tables
+          [columns]="tableColumns"
+          [dataSource]="dataSource"
+        ></app-tables>
+      </div>
+    </div>
+  </div>
+</div>
