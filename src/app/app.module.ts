@@ -14,7 +14,6 @@ import { SectionHomeComponent } from './home/components/section-home/section-hom
 import { FooterHomeComponent } from './home/components/footer-home/footer-home.component';
 import { HeaderComponent } from './home/components/header-home/header-home.component';
 import { ReforceSectionComponent } from './home/components/reforce-section/reforce-section.component';
-import { NavbarPanelComponent } from './control-panel/components/navbar-panel/navbar-panel.component';
 import { ControlPanelModule } from './control-panel/control-panel.module';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 

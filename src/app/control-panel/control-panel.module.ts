@@ -10,6 +10,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { LastContentComponent } from './components/last-content/last-content.component';
 import { TablesComponent } from './components/tables/tables.component';
+import { CatalogPanelComponent } from './pages/catalog-panel/catalog-panel.component';
+import { ProductsPanelComponent } from './pages/products-panel/products-panel.component';
+import { SalesPanelComponent } from './pages/sales-panel/sales-panel.component';
+import { CustomersPanelComponent } from './pages/customers-panel/customers-panel.component';
+import { OptionsPanelComponent } from './pages/options-panel/options-panel.component';
+import { AppRoutingModule } from '../app-routing.module';
+import { ControlPanelRoutingModuleTsModule } from './control-panel.routing.module.ts.module';
+import { LaunchPanelComponent } from './pages/launch-panel/launch-panel.component';
 
 @NgModule({
   declarations: [
@@ -18,6 +26,12 @@ import { TablesComponent } from './components/tables/tables.component';
     CardAnaliticsComponent,
     LastContentComponent,
     TablesComponent,
+    CatalogPanelComponent,
+    ProductsPanelComponent,
+    SalesPanelComponent,
+    CustomersPanelComponent,
+    OptionsPanelComponent,
+    LaunchPanelComponent,
   ],
   imports: [
     CommonModule,
@@ -26,6 +40,8 @@ import { TablesComponent } from './components/tables/tables.component';
     BrowserModule,
     FormsModule,
     BrowserAnimationsModule,
+    AppRoutingModule,
+    ControlPanelRoutingModuleTsModule,
   ],
   exports: [NavbarPanelComponent, CardsInformationComponent, TablesComponent],
 })

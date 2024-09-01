@@ -1,18 +1,34 @@
 import { SidebarItem } from '../interfaces/sidebar-item.interface';
 
 export const sidebarItems: SidebarItem[] = [
-  { label: 'Inicio', icon: 'home', route: '/inicio' },
+  {
+    label: 'Inicio',
+    icon: 'home',
+    route: 'launch',
+  },
   {
     label: 'Catálogo',
     icon: 'sell',
-    route: '/catalogo',
+    route: 'catalog',
   },
   {
     label: 'Productos',
     icon: 'inventory',
-    route: '/products',
+    route: 'products',
   },
-  { label: 'Ventas', icon: 'attach_money', route: '/ventas' },
-  { label: 'Clientes', icon: 'group', route: '/clientes' },
-  { label: 'Opciones', icon: 'settings', route: '/opciones' },
+  {
+    label: 'Ventas',
+    icon: 'attach_money',
+    route: 'sales',
+  },
+  {
+    label: 'Clientes',
+    icon: 'group',
+    route: 'client',
+  },
+  {
+    label: 'Opciones',
+    icon: 'settings',
+    route: 'options',
+  },
 ];

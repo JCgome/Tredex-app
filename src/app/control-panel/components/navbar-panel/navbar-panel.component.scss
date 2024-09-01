@@ -5,9 +5,11 @@ mat-sidenav-container[fullscreen] {
 .sidenav-container {
   width: 250px;
   margin-top: 65px;
-  background-color: #bebfc5;
+  background-color: #f5f5f5;
   color: black;
   text-align: center;
+  border: none;
+  text-decoration: none;
 }
 
 .spacer {
@@ -44,6 +46,31 @@ mat-toolbar {
 .container {
   margin-top: 64px;
   padding: 16px;
+}
+
+.btn-custom {
+  background-color: #800020;
+  border-color: #800020;
+  color: #ffffff;
+  padding: 10px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.btn-custom:hover {
+  background-color: #ffdb58;
+  border-color: #ffdb58;
+  color: black;
+  font-weight: bold;
+}
+.btn-custom mat-icon {
+  font-size: 1.5rem;
 }
 
 @media (max-width: 768px) {

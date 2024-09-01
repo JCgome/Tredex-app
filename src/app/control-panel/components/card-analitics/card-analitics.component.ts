@@ -1,6 +1,7 @@
 import { SecondCountryAnaliticService } from './../../../core/services/second-country-analitic.service';
 import { CountryAnaliticService } from './../../../core/services/country-analitic.service';
 import { Component } from '@angular/core';
+import { LegendPosition } from '@swimlane/ngx-charts';
 
 @Component({
   selector: 'app-card-analitics',
@@ -8,7 +9,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./card-analitics.component.scss'],
 })
 export class CardAnaliticsComponent {
-  view: [number, number] = [600, 400];
+  view: [number, number] = [580, 400];
 
   // options
   gradient: boolean = true;
@@ -22,8 +23,8 @@ export class CardAnaliticsComponent {
   yAxis: boolean = true;
   showYAxisLabel: boolean = true;
   showXAxisLabel: boolean = true;
-  xAxisLabel: string = 'Year';
-  yAxisLabel: string = 'Population';
+  xAxisLabel: string = 'Años';
+  yAxisLabel: string = 'Ventas';
   timeline: boolean = true;
 
   colorScheme = {
