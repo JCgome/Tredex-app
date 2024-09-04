@@ -5,20 +5,20 @@ export interface PeriodicElement {
   name: string;
   position: number;
   weight: number;
-  symbol: string;
+  date: string;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  { position: 1, name: 'Hydrogen', weight: 1.0079, symbol: 'H' },
-  { position: 2, name: 'Helium', weight: 4.0026, symbol: 'He' },
-  { position: 3, name: 'Lithium', weight: 6.941, symbol: 'Li' },
-  { position: 4, name: 'Beryllium', weight: 9.0122, symbol: 'Be' },
-  { position: 5, name: 'Boron', weight: 10.811, symbol: 'B' },
-  { position: 6, name: 'Carbon', weight: 12.0107, symbol: 'C' },
-  { position: 7, name: 'Nitrogen', weight: 14.0067, symbol: 'N' },
-  { position: 8, name: 'Oxygen', weight: 15.9994, symbol: 'O' },
-  { position: 9, name: 'Fluorine', weight: 18.9984, symbol: 'F' },
-  { position: 10, name: 'Neon', weight: 20.1797, symbol: 'Ne' },
+  { position: 1, name: 'Angel', weight: 1.0079, date: '02/01/2025' },
+  { position: 2, name: 'Luis', weight: 4.0026, date: '02/01/2025' },
+  { position: 3, name: 'Sara', weight: 6.941, date: '02/01/2025' },
+  { position: 4, name: 'Elena', weight: 9.0122, date: '02/01/2025' },
+  { position: 5, name: 'Rafael', weight: 10.811, date: '02/01/2025' },
+  { position: 6, name: 'Miguel', weight: 12.0107, date: '02/01/2025' },
+  { position: 7, name: 'Gonzalo', weight: 14.0067, date: '02/01/2025' },
+  { position: 8, name: 'Carlos', weight: 15.9994, date: '02/01/2025' },
+  { position: 9, name: 'Pilar', weight: 18.9984, date: '02/01/2025' },
+  { position: 10, name: 'Ana', weight: 20.1797, date: '02/01/2025' },
 ];
 @Component({
   selector: 'app-last-content',
@@ -29,23 +29,23 @@ export class LastContentComponent implements OnInit {
   tableColumns = [
     {
       columnDef: 'position',
-      header: 'No.',
+      header: 'Order',
       cell: (element: PeriodicElement) => `${element.position}`,
     },
     {
       columnDef: 'name',
-      header: 'Name',
+      header: 'Cliente',
       cell: (element: PeriodicElement) => `${element.name}`,
     },
     {
-      columnDef: 'weight',
-      header: 'Weight',
-      cell: (element: PeriodicElement) => `${element.weight}`,
+      columnDef: 'Fecha',
+      header: 'Date',
+      cell: (element: PeriodicElement) => `${element.date}`,
     },
     {
-      columnDef: 'symbol',
-      header: 'Symbol',
-      cell: (element: PeriodicElement) => `${element.symbol}`,
+      columnDef: 'Total',
+      header: 'Weight',
+      cell: (element: PeriodicElement) => `${element.weight}`,
     },
   ];
 

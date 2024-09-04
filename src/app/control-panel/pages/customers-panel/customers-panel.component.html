@@ -1,1 +1,45 @@
-<p>customers-panel works!</p>
+<div class="container-fluid mt-5 p-5">
+  <div
+    class="start-table d-flex justify-content-between align-items-center mb-4"
+  >
+    <!-- Título alineado a la izquierda -->
+    <h1 class="m-0">Clientes</h1>
+
+    <!-- Botones alineados a la derecha -->
+    <div>
+      <button mat-flat-button color="primary">Agregar Cliente</button>
+      <button mat-fab disabled class="button-filter">
+        <mat-icon>filter_list</mat-icon>
+      </button>
+    </div>
+  </div>
+  <table
+    class="table table-striped table-bordered table-hover w-100 custom-table"
+  >
+    <thead class="thead-dark">
+      <tr>
+        <th scope="col">Nombre</th>
+        <th scope="col">Email</th>
+        <th scope="col">Teléfono</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of dataSource">
+        <td>{{ getFullName(user) }}</td>
+        <td>{{ user.email }}</td>
+        <td>{{ user.phone }}</td>
+        <td class="text-center">
+          <div class="editAndDelte">
+            <button class="btn btn-sm btn-edit">
+              <mat-icon>edit</mat-icon>
+            </button>
+            <button class="btn btn-sm btn-delete">
+              <mat-icon>delete</mat-icon>
+            </button>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

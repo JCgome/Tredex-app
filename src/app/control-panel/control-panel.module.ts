@@ -18,6 +18,7 @@ import { OptionsPanelComponent } from './pages/options-panel/options-panel.compo
 import { AppRoutingModule } from '../app-routing.module';
 import { ControlPanelRoutingModuleTsModule } from './control-panel.routing.module.ts.module';
 import { LaunchPanelComponent } from './pages/launch-panel/launch-panel.component';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -42,6 +43,7 @@ import { LaunchPanelComponent } from './pages/launch-panel/launch-panel.componen
     BrowserAnimationsModule,
     AppRoutingModule,
     ControlPanelRoutingModuleTsModule,
+    HttpClientModule,
   ],
   exports: [NavbarPanelComponent, CardsInformationComponent, TablesComponent],
 })

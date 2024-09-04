@@ -21,6 +21,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatTableModule,
     MatPaginatorModule,
     MatFormFieldModule,
+    MatPaginatorModule,
   ],
 })
 export class MaterialModule {}
