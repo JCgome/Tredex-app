@@ -9,6 +9,7 @@ import { MatListModule } from '@angular/material/list';
 import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatBadgeModule } from '@angular/material/badge';
 @NgModule({
   imports: [CommonModule],
   exports: [
@@ -22,6 +23,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     MatPaginatorModule,
     MatFormFieldModule,
     MatPaginatorModule,
+    MatBadgeModule,
   ],
 })
 export class MaterialModule {}

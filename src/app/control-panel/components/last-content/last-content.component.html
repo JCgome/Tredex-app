@@ -5,8 +5,7 @@
         <div class="card-header">
           <p>Actividades Recientes</p>
         </div>
-        <app-tables>
-          <h1>no disponible</h1>
+        <app-tables [columns]="tableColumns" [dataSource]="dataSource">
         </app-tables>
       </div>
     </div>

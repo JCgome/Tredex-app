@@ -15,7 +15,6 @@ import { FooterHomeComponent } from './home/components/footer-home/footer-home.c
 import { HeaderComponent } from './home/components/header-home/header-home.component';
 import { ReforceSectionComponent } from './home/components/reforce-section/reforce-section.component';
 import { ControlPanelModule } from './control-panel/control-panel.module';
-import { NgxChartsModule } from '@swimlane/ngx-charts';
 
 @NgModule({
   declarations: [

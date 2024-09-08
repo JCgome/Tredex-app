@@ -1,15 +1,16 @@
-import { ApiServiceService } from './../../../shared/services/api-service.service';
+import { ApiServiceService } from './../../../../shared/services/api-service.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Client, Result } from 'src/app/core/interfaces/client.interface';
 
 @Component({
-  selector: 'app-customers-panel',
-  templateUrl: './customers-panel.component.html',
-  styleUrls: ['./customers-panel.component.scss'],
+  selector: 'app-edit',
+  templateUrl: './edit.component.html',
+  styleUrls: ['./edit.component.scss'],
 })
-export class CustomersPanelComponent implements OnInit {
+export class EditComponent implements OnInit {
   dataSource: Result[] = [];
+  user: Result | null = null;
 
   constructor(
     private ApiServiceService: ApiServiceService,
@@ -19,6 +20,9 @@ export class CustomersPanelComponent implements OnInit {
   ngOnInit(): void {
     this.ApiServiceService.getData().subscribe((data: Client) => {
       this.dataSource = data.results;
+      if (this.dataSource.length > 0) {
+        this.user = this.dataSource[0];
+      }
     });
   }
 
@@ -26,7 +30,7 @@ export class CustomersPanelComponent implements OnInit {
     return `${element.name.title} ${element.name.first} ${element.name.last}`;
   }
 
-  goEdit() {
-    this.router.navigate(['edit']);
+  goBack() {
+    this.router.navigate(['panel/client']);
   }
 }

@@ -8,6 +8,11 @@ import { sidebarItems } from 'src/app/core/data/sidebar-items.data';
   styleUrls: ['./navbar-panel.component.scss'],
 })
 export class NavbarPanelComponent implements AfterViewInit {
+  hidden = false;
+
+  toggleBadgeVisibility() {
+    this.hidden = !this.hidden;
+  }
   @ViewChild('sidenav') sidenav!: MatSidenav;
   public sidebarItems = sidebarItems;
 

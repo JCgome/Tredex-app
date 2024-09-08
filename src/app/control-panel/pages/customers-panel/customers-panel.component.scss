@@ -1,18 +1,21 @@
-/* Centrar el título y agregar margen inferior */
-
 .start-table {
   display: flex;
-  justify-content: space-between; /* Distribuye los elementos a los lados */
-  align-items: center; /* Centra verticalmente los elementos */
+  justify-content: space-between;
+  align-items: center;
 }
 
 .start-table h1 {
-  margin: 0; /* Elimina el margen por defecto del h1 */
+  margin: 0;
+  font-size: 2rem;
+  text-decoration: 2px underline;
 }
 
 .start-table div {
   display: flex;
-  gap: 10px; /* Añade espacio entre los botones */
+  gap: 10px;
+}
+.butto-add {
+  padding: 5px 5px;
 }
 
 .button-filter {
@@ -20,7 +23,6 @@
   cursor: pointer;
 }
 
-/* Estilos para la tabla */
 .custom-table {
   background-color: #f9f9f9;
   border-radius: 8px;
@@ -45,13 +47,11 @@
 }
 
 .custom-table tr:hover {
-  background-color: #e9ecef; /* Resaltar fila al pasar el mouse */
+  background-color: #e9ecef;
 }
 
-/* Estilos para la columna de editar */
 .custom-table .btn-edit {
-  background-color: #007bff;
-  border-color: black;
+  background-color: #0070bb;
   padding: 5px 10px;
   font-size: 1rem;
 }
@@ -63,20 +63,9 @@
   justify-content: center;
 }
 .custom-table .btn-delete {
-  background-color: red;
-  border-color: black;
+  background-color: #b22222;
   padding: 5px 10px;
   font-size: 1rem;
-}
-
-.custom-table .btn-edit:hover {
-  background-color: #0056b3;
-  border-color: #004085;
-}
-
-.custom-table .btn-delete:hover {
-  background-color: #0056b3;
-  border-color: #004085;
 }
 
 .custom-table .mat-icon {

@@ -1,0 +1,146 @@
+<div class="container mt-3">
+  <h2 class="mb-4">Editar Perfil</h2>
+  <form>
+    <table class="table table-bordered" *ngIf="user">
+      <tbody>
+        <tr>
+          <td rowspan="5" class="align-middle text-center" style="width: 30%">
+            <!-- Imagen de perfil -->
+            <img
+              [src]="user.picture.large"
+              alt="{{ getFullName(user) }}"
+              class="img-thumbnail"
+            />
+          </td>
+          <td>
+            <label for="nombre" class="form-label">Nombre</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nombre"
+              [(ngModel)]="user.name.first"
+              name="name"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="secondName" class="form-label">Apellidos</label>
+            <input
+              type="text"
+              class="form-control"
+              id="secondName"
+              [(ngModel)]="user.name.last"
+              name="secondName"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="userName" class="form-label">Nombre Usuario</label>
+            <input
+              type="text"
+              class="form-control"
+              id="secondName"
+              [(ngModel)]="user.login.username"
+              name="nameUser"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="pass" class="form-label">Contraseña</label>
+            <input
+              type="text"
+              class="form-control"
+              id="secondName"
+              [(ngModel)]="user.login.password"
+              name="secondName"
+            />
+          </td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <td>
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              [(ngModel)]="user.email"
+              name="mail"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="telefono" class="form-label">Teléfono</label>
+            <input
+              type="tel"
+              class="form-control"
+              id="telefono"
+              [(ngModel)]="user.phone"
+              name="phone"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="fecha_nacimiento" class="form-label">Edad</label>
+            <input
+              type="text"
+              class="form-control"
+              id="fecha_nacimiento"
+              [(ngModel)]="user.dob.age"
+              name="date"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <label for="country" class="form-label">Pais</label>
+            <input
+              type="text"
+              class="form-control"
+              id="telefono"
+              [(ngModel)]="user.location.country"
+              name="country"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="direccion" class="form-label">Ciudad</label>
+            <input
+              type="text"
+              class="form-control"
+              id="direccion"
+              [(ngModel)]="user.location.city"
+              name="city"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="direccion" class="form-label">Dirección</label>
+            <input
+              type="text"
+              class="form-control"
+              id="direccion"
+              [(ngModel)]="user.location.street.name"
+              name="direction"
+            />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="button d-flex justify-content-between align-items-center mb-5">
+      <button type="submit" class="btn-back" (click)="goBack()">Volver</button>
+      <button type="submit" class="btn-save">Guardar Cambios</button>
+    </div>
+  </form>
+</div>

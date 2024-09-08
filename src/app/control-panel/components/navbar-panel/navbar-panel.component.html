@@ -28,7 +28,13 @@
       <span class="spacer"></span>
 
       <div class="dropdown-center">
-        <button mat-icon-button class="notification">
+        <button
+          class="notification"
+          matBadge="7"
+          [matBadgeHidden]="hidden"
+          matBadgeColor="warn"
+          (click)="toggleBadgeVisibility()"
+        >
           <mat-icon>notifications</mat-icon>
         </button>
 
