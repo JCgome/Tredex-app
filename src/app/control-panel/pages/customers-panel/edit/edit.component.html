@@ -5,7 +5,6 @@
       <tbody>
         <tr>
           <td rowspan="5" class="align-middle text-center" style="width: 30%">
-            <!-- Imagen de perfil -->
             <img
               [src]="user.picture.large"
               alt="{{ getFullName(user) }}"
@@ -139,8 +138,19 @@
       </tbody>
     </table>
     <div class="button d-flex justify-content-between align-items-center mb-5">
+      <div *ngIf="isLoading" class="spinner-overlay">
+        <mat-spinner></mat-spinner>
+      </div>
+
       <button type="submit" class="btn-back" (click)="goBack()">Volver</button>
-      <button type="submit" class="btn-save">Guardar Cambios</button>
+      <button
+        type="submit"
+        class="btn-save"
+        (click)="goSave()"
+        [disabled]="isLoading"
+      >
+        Guardar Cambios
+      </button>
     </div>
   </form>
 </div>

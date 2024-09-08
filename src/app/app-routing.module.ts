@@ -8,10 +8,11 @@ import { OptionsPanelComponent } from './control-panel/pages/options-panel/optio
 import { ProductsPanelComponent } from './control-panel/pages/products-panel/products-panel.component';
 import { SalesPanelComponent } from './control-panel/pages/sales-panel/sales-panel.component';
 import { LaunchPanelComponent } from './control-panel/pages/launch-panel/launch-panel.component';
+import { EditComponent } from './control-panel/pages/customers-panel/edit/edit.component';
 
 const routes: Routes = [
   {
-    path: '',
+    path: 'home',
     component: HomeComponent,
   },
   {
@@ -28,8 +29,12 @@ const routes: Routes = [
     ],
   },
   {
+    path: 'edit',
+    component: EditComponent,
+  },
+  {
     path: '**',
-    redirectTo: 'Home',
+    redirectTo: 'home',
   },
 ];
 

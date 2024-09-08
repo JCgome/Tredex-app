@@ -4,12 +4,17 @@
   >
     <h1 class="m-0">Clientes</h1>
     <div>
-      <button mat-flat-button color="primary" class="butto-add">
+      <button mat-flat-button color="primary" (click)="error()">
         Agregar Cliente
       </button>
-      <button mat-fab disabled class="button-filter">
+
+      <button mat-fab class="btn-filter" (click)="error()">
         <mat-icon>filter_list</mat-icon>
       </button>
+
+      <div *ngIf="showError" class="menssage">
+        Lo sentimos, esta funcionalidad no está habilitada en el entorno actual
+      </div>
     </div>
   </div>
   <table
@@ -33,7 +38,7 @@
             <button class="btn btn-sm btn-edit" (click)="goEdit()">
               <mat-icon>edit</mat-icon>
             </button>
-            <button class="btn btn-sm btn-delete">
+            <button class="btn btn-sm btn-delete" (click)="error()">
               <mat-icon>delete</mat-icon>
             </button>
           </div>

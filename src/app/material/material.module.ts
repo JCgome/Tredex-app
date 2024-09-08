@@ -10,6 +10,11 @@ import { MatTableModule } from '@angular/material/table';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatBadgeModule } from '@angular/material/badge';
+import { MatDialogModule } from '@angular/material/dialog';
+import { MatTooltipModule } from '@angular/material/tooltip';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
+import { MatExpansionModule } from '@angular/material/expansion';
 @NgModule({
   imports: [CommonModule],
   exports: [
@@ -24,6 +29,11 @@ import { MatBadgeModule } from '@angular/material/badge';
     MatFormFieldModule,
     MatPaginatorModule,
     MatBadgeModule,
+    MatDialogModule,
+    MatTooltipModule,
+    MatSnackBarModule,
+    MatProgressSpinnerModule,
+    MatExpansionModule,
   ],
 })
 export class MaterialModule {}

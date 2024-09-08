@@ -7,20 +7,18 @@
 .start-table h1 {
   margin: 0;
   font-size: 2rem;
-  text-decoration: 2px underline;
+  text-transform: uppercase;
 }
 
 .start-table div {
   display: flex;
   gap: 10px;
 }
-.butto-add {
-  padding: 5px 5px;
-}
 
-.button-filter {
+.btn-filter {
   margin-left: 10px;
-  cursor: pointer;
+  background: #e9ecef;
+  color: #f44336;
 }
 
 .custom-table {
@@ -73,4 +71,16 @@
   margin-right: 5px;
   font-size: 20px;
   color: #e9ecef;
+}
+.menssage {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f44336;
+  color: white;
+  padding: 16px 24px;
+  border-radius: 4px;
+  text-align: center;
+  z-index: 1000;
 }

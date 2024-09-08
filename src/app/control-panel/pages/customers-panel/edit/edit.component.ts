@@ -11,6 +11,7 @@ import { Client, Result } from 'src/app/core/interfaces/client.interface';
 export class EditComponent implements OnInit {
   dataSource: Result[] = [];
   user: Result | null = null;
+  isLoading = false;
 
   constructor(
     private ApiServiceService: ApiServiceService,
@@ -32,5 +33,22 @@ export class EditComponent implements OnInit {
 
   goBack() {
     this.router.navigate(['panel/client']);
+  }
+
+  showError = false;
+
+  error() {
+    this.showError = true;
+    setTimeout(() => {
+      this.showError = false;
+    }, 5000);
+  }
+
+  goSave() {
+    this.isLoading = true;
+    setTimeout(() => {
+      this.router.navigate(['panel/client']);
+      this.isLoading = false;
+    }, 2000);
   }
 }

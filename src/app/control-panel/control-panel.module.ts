@@ -16,7 +16,7 @@ import { SalesPanelComponent } from './pages/sales-panel/sales-panel.component';
 import { CustomersPanelComponent } from './pages/customers-panel/customers-panel.component';
 import { OptionsPanelComponent } from './pages/options-panel/options-panel.component';
 import { AppRoutingModule } from '../app-routing.module';
-import { ControlPanelRoutingModuleTsModule } from './control-panel.routing.module.ts.module';
+
 import { LaunchPanelComponent } from './pages/launch-panel/launch-panel.component';
 import { HttpClientModule } from '@angular/common/http';
 import { EditComponent } from './pages/customers-panel/edit/edit.component';
@@ -44,7 +44,6 @@ import { EditComponent } from './pages/customers-panel/edit/edit.component';
     FormsModule,
     BrowserAnimationsModule,
     AppRoutingModule,
-    ControlPanelRoutingModuleTsModule,
     HttpClientModule,
   ],
   exports: [NavbarPanelComponent, CardsInformationComponent, TablesComponent],
