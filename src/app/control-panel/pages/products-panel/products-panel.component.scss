@@ -1,0 +1,45 @@
+.start-table h1 {
+  margin: 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  text-decoration: 2px underline #0070bb;
+}
+.start-table div {
+  display: flex;
+  gap: 10px;
+}
+
+.custom-table {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.custom-table thead {
+  color: #fff;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 12px 15px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.custom-table th {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+}
+
+.custom-table tr:hover {
+  background-color: #e9ecef;
+}
+
+.custom-table .mat-icon {
+  vertical-align: middle;
+  margin-right: 5px;
+  font-size: 20px;
+  color: #e9ecef;
+}

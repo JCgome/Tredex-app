@@ -19,7 +19,7 @@ export class EditComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.ApiServiceService.getData().subscribe((data: Client) => {
+    this.ApiServiceService.getDataClient().subscribe((data: Client) => {
       this.dataSource = data.results;
       if (this.dataSource.length > 0) {
         this.user = this.dataSource[0];

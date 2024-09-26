@@ -1,10 +1,6 @@
 import { MatSnackBar, MatSnackBarConfig } from '@angular/material/snack-bar';
 import { ApiServiceService } from './../../../shared/services/api-service.service';
 import { Component, OnInit } from '@angular/core';
-import {
-  MAT_TOOLTIP_DEFAULT_OPTIONS,
-  MatTooltipDefaultOptions,
-} from '@angular/material/tooltip';
 import { Router } from '@angular/router';
 import { Client, Result } from 'src/app/core/interfaces/client.interface';
 
@@ -22,7 +18,7 @@ export class CustomersPanelComponent implements OnInit {
   ) {}
 
   ngOnInit(): void {
-    this.ApiServiceService.getData().subscribe((data: Client) => {
+    this.ApiServiceService.getDataClient().subscribe((data: Client) => {
       this.dataSource = data.results;
     });
   }
