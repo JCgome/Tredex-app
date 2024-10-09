@@ -6,6 +6,7 @@ export const environment = {
   production: false,
   apiClient: 'https://randomuser.me/api/?results=15',
   apiProducts: 'https://fakestoreapi.com/products',
+  apiTracked: 'https://api.mockaroo.com/api/11e6b080?count=100&key=f57dafa0',
 };
 
 /*

@@ -1,0 +1,88 @@
+.start-table {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.start-table h1 {
+  margin: 0;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+  text-decoration: 2px underline #0070bb;
+}
+
+.start-table div {
+  display: flex;
+  gap: 10px;
+}
+
+.btn-filter {
+  margin-left: 10px;
+  background: #e9ecef;
+  color: #f44336;
+}
+
+.custom-table {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.custom-table thead {
+  color: #fff;
+}
+
+.custom-table th,
+.custom-table td {
+  padding: 12px 15px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.custom-table th {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: bold;
+}
+
+.custom-table tr:hover {
+  background-color: #e9ecef;
+}
+
+.custom-table .btn-edit {
+  background-color: #0070bb;
+  padding: 5px 10px;
+  font-size: 1rem;
+}
+
+.editAndDelte {
+  display: flex;
+  gap: 0.5rem;
+
+  justify-content: center;
+}
+.custom-table .btn-delete {
+  background-color: #b22222;
+  padding: 5px 10px;
+  font-size: 1rem;
+}
+
+.custom-table .mat-icon {
+  vertical-align: middle;
+  margin-right: 5px;
+  font-size: 20px;
+  color: #e9ecef;
+}
+.menssage {
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f44336;
+  color: white;
+  padding: 16px 24px;
+  border-radius: 4px;
+  text-align: center;
+  z-index: 1000;
+}
