@@ -19,7 +19,8 @@ import { AppRoutingModule } from '../app-routing.module';
 
 import { LaunchPanelComponent } from './pages/launch-panel/launch-panel.component';
 import { HttpClientModule } from '@angular/common/http';
-import { EditComponent } from './pages/customers-panel/edit/edit.component';
+import { EditCustomerComponent } from './pages/customers-panel/edit-customers/edit-customer.component';
+import { MoreDetailSalesComponent } from './pages/sales-panel/more-detail-sales/more-detail-sales.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { EditComponent } from './pages/customers-panel/edit/edit.component';
     CustomersPanelComponent,
     OptionsPanelComponent,
     LaunchPanelComponent,
-    EditComponent,
+    EditCustomerComponent,
+    MoreDetailSalesComponent,
   ],
   imports: [
     CommonModule,

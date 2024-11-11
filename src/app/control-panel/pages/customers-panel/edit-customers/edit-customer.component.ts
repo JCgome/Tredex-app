@@ -1,14 +1,14 @@
-import { ApiServiceService } from './../../../../shared/services/api-service.service';
+import { ApiServiceService } from '../../../../shared/services/api-service.service';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Client, Result } from 'src/app/core/interfaces/client.interface';
 
 @Component({
   selector: 'app-edit',
-  templateUrl: './edit.component.html',
-  styleUrls: ['./edit.component.scss'],
+  templateUrl: './edit-customer.component.html',
+  styleUrls: ['./edit-customer.component.scss'],
 })
-export class EditComponent implements OnInit {
+export class EditCustomerComponent implements OnInit {
   dataSource: Result[] = [];
   user: Result | null = null;
   isLoading = false;

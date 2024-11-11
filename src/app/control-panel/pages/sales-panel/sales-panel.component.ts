@@ -1,4 +1,5 @@
-import { ApiServiceService } from './../../../shared/services/api-service.service';
+import { Router } from '@angular/router';
+import { ApiServiceService } from '../../../shared/services/api-service.service';
 import { Component, OnInit } from '@angular/core';
 import { Tracked } from 'src/app/core/interfaces/tracked.interface';
 
@@ -10,12 +11,19 @@ import { Tracked } from 'src/app/core/interfaces/tracked.interface';
 export class SalesPanelComponent implements OnInit {
   data: Tracked[] = [];
 
-  constructor(private ApiServiceService: ApiServiceService) {}
+  constructor(
+    private ApiServiceService: ApiServiceService,
+    private router: Router
+  ) {}
 
   ngOnInit(): void {
     this.ApiServiceService.getDataTracked().subscribe((data: Tracked[]) => {
       this.data = data;
       console.log(data);
     });
+  }
+
+  seeMore() {
+    this.router.navigate(['/more-sales']);
   }
 }

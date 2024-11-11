@@ -1,0 +1,71 @@
+<div class="container">
+  <div class="button-close">
+    <button mat-mini-fab color="primary" (click)="onClose()">
+      <mat-icon>close</mat-icon>
+    </button>
+  </div>
+  <form>
+    <h2 class="mb-4">Detalles</h2>
+    <div class="grid-container" *ngIf="sales">
+      <div class="column">
+        <h3>Información General</h3>
+        <div class="form-group">
+          <label for="nombre" class="form-label">Nombre</label>
+          <p>{{ sales.name }}</p>
+        </div>
+        <div class="form-group">
+          <label for="secondName" class="form-label">Apellidos</label>
+          <p>{{ sales.last_name }}</p>
+        </div>
+        <div class="form-group">
+          <label for="userName" class="form-label">País</label>
+          <p>{{ sales.country }}</p>
+        </div>
+        <div class="form-group">
+          <label for="pass" class="form-label">Ciudad</label>
+          <p>{{ sales.city }}</p>
+        </div>
+      </div>
+
+      <div class="column">
+        <h3>Datos Importantes</h3>
+        <div class="form-group">
+          <label for="email" class="form-label">Email</label>
+          <p>{{ sales.email }}</p>
+        </div>
+        <div class="form-group">
+          <label for="telefono" class="form-label">Teléfono</label>
+          <p>{{ sales.phone }}</p>
+        </div>
+        <div class="form-group">
+          <label for="fecha_nacimiento" class="form-label"
+            >Tarjeta de Crédito</label
+          >
+          <p>{{ sales.credit_card }}</p>
+        </div>
+        <div class="form-group">
+          <label for="country" class="form-label">Fecha</label>
+          <p>{{ sales.purchase_date }}</p>
+        </div>
+      </div>
+
+      <div class="column">
+        <h3>Venta</h3>
+        <div class="form-group">
+          <label for="direccion" class="form-label">Cantidad</label>
+          <p>{{ sales.quantity }}</p>
+        </div>
+        <div class="form-group">
+          <label for="direccion" class="form-label">Precio</label>
+          <p>{{ sales.sale_price }}</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="button d-flex justify-content-between align-items-center mb-5">
+      <div *ngIf="isLoading" class="spinner-overlay">
+        <mat-spinner></mat-spinner>
+      </div>
+    </div>
+  </form>
+</div>

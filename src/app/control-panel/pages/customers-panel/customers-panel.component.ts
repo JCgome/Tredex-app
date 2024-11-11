@@ -28,7 +28,7 @@ export class CustomersPanelComponent implements OnInit {
   }
 
   goEdit() {
-    this.router.navigate(['/edit']);
+    this.router.navigate(['/edit-customers']);
   }
 
   error() {

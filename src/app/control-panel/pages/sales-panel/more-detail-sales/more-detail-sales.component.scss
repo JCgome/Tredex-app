@@ -1,0 +1,62 @@
+.container {
+  background: white;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  margin-top: 100px;
+}
+
+h2 {
+  font-weight: 600;
+  color: #444;
+  text-align: center;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+.button-close {
+  display: flex;
+  justify-content: end;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+.column {
+  padding: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.column h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-label {
+  font-weight: bold;
+  color: #555;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+
+.spinner-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  z-index: 9999;
+}
