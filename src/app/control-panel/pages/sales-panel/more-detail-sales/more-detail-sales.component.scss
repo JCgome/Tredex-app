@@ -25,20 +25,20 @@ h2 {
   gap: 2rem;
 }
 
-.column {
+.card-one,
+.card-two,
+.card-three {
   padding: 1rem;
   border: 1px solid #ddd;
   border-radius: 5px;
 }
 
-.column h3 {
+.card-one h3,
+.card-two h3,
+.card-three h3 {
   font-size: 1.2rem;
   margin-bottom: 1rem;
   color: #333;
-}
-
-.form-group {
-  margin-bottom: 1rem;
 }
 
 .form-label {
